@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script>
+        // Redirect to English if they explicitly chose it or if their browser isn't Portuguese
+        const savedLang = localStorage.getItem('lang');
+        if (savedLang === 'en' || (!savedLang && !navigator.language.toLowerCase().startsWith('pt'))) {
+            window.location.replace('./');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Fernandes | Senior Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Vinícius Fernandes, Senior Software Engineer specializing in React Native, Expo, TypeScript, React JS, and Node JS.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">VF<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="./" onclick="localStorage.setItem('lang', 'en')" class="lang-toggle"
+                        title="Switch to English"><i class="ph ph-globe"></i> EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <span class="badge fade-in-up">Disponível para novas oportunidades</span>
+                <h1 class="hero-title fade-in-up" style="animation-delay: 0.1s;">
+                    Olá, eu sou <br>
+                    <span class="gradient-text">Vinícius Fernandes</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                    Senior Software Engineer
+                </h2>
+                <p class="hero-description fade-in-up" style="animation-delay: 0.3s;">
+                    Especialista em React Native, Expo, TypeScript e React JS. <br>
+                    Criando aplicações mobile escaláveis e de alta performance.
+                </p>
+                <div class="hero-buttons fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="#experience" class="btn btn-primary">Ver Projetos</a>
+                    <a href="https://www.linkedin.com/in/vin%C3%ADcius-fernandes-027507159" target="_blank"
+                        class="btn btn-secondary">
+                        <i class="ph ph-linkedin-logo"></i> LinkedIn
+                    </a>
+                    <a href="mailto:nascimento.vinicius32@gmail.com" class="btn btn-secondary">
+                        <i class="ph ph-envelope-simple"></i> Contato
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section reveal">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <div class="line"></div>
+            </div>
+            <div class="glass-card about-card">
+                <p>
+                    Sou um desenvolvedor Mobile e Full Stack com mais de 7 anos de experiência desenvolvendo soluções
+                    escaláveis e de alto impacto, com foco em aplicativos móveis utilizando <strong>React
+                        Native</strong> e <strong>TypeScript</strong>.
+                </p>
+                <p>
+                    Tenho domínio avançado em React Native (Expo), TypeScript e Redux, atuando na construção de
+                    aplicativos Android e iOS utilizados por mais de 50.000 usuários ativos. Minha experiência inclui
+                    otimização de performance, arquitetura frontend escalável, publicação em App Store e Play Store,
+                    além de estratégias para redução de crashes e aumento de retenção de usuários.
+                </p>
+                <p>
+                    Possuo experiência full stack, com atuação no desenvolvimento de APIs REST utilizando Laravel,
+                    integração com bancos de dados relacionais, uso de Docker e colaboração em pipelines CI/CD. Já
+                    participei de projetos nos segmentos de saúde, ERP e e-commerce, além de contribuir para projetos
+                    open-source do ecossistema Expo.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section reveal">
+            <div class="section-header">
+                <h2>Experiência</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Forluz -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Mobile Developer</h3>
+                                <h4>Forluz</h4>
+                            </div>
+                            <span class="timeline-date">Fevereiro 2024 - Presente</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Liderança técnica no desenvolvimento e evolução do aplicativo mobile da empresa (Android
+                                e iOS) utilizando React Native com Expo.</li>
+                            <li>Implementação de novas funcionalidades e otimização de performance, atingindo 99,5% de
+                                sessões crash-free.</li>
+                            <li>Melhoria de 30% no tempo de carregamento através de otimização de bundles e aumento de
+                                15% na retenção de usuários.</li>
+                            <li>Definição de padrões de componentização, arquitetura e revisão de código (code review).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SEI Sistemas Brasil -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Full Stack Engineer</h3>
+                                <h4>SEI Sistemas Brasil</h4>
+                            </div>
+                            <span class="timeline-date">Agosto 2022 - Presente</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Desenvolvimento de aplicações web e mobile com React.js, Node.js, Next.js e React Native
+                                integradas com MySQL e APIs.</li>
+                            <li>Suporte técnico e mentoria a estagiários, contribuindo para a evolução da equipe.</li>
+                            <li>Criação e manutenção de documentação técnica e padrões de desenvolvimento.</li>
+                            <li>Melhoria contínua dos processos internos de desenvolvimento baseados em levantamento de
+                                requisitos e revisão de código.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Smart Support -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Full Stack Developer</h3>
+                                <h4>Smart Support</h4>
+                            </div>
+                            <span class="timeline-date">Setembro 2020 - Maio 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Desenvolvimento de aplicações web e sistemas utilizando Laravel, PHP, MySQL e WordPress.
+                            </li>
+                            <li>Implementação de melhorias em SEO, otimizando mecanismos de busca.</li>
+                            <li>Configuração e gerenciamento de infraestrutura e segurança em sites WordPress,
+                                colaborando na definição de tecnologias.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SESDEC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Desenvolvedor Full Stack & Tutor</h3>
+                                <h4>SESDEC (Comando Geral)</h4>
+                            </div>
+                            <span class="timeline-date">Junho 2019 - Setembro 2020</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Participação ativa em todas as etapas de ideação, planejamento e desenvolvimento de
+                                plataforma ERP em Laravel, Bootstrap, PHP e MySQL.</li>
+                            <li>Mentoria e suporte técnico a novos desenvolvedores como tutor de desenvolvimento.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section reveal">
+            <div class="section-header">
+                <h2>Projetos Publicados</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="glass-card project-card">
+                <div class="project-header" style="margin-bottom: 16px;">
+                    <h3 style="font-size: 1.5rem; color: var(--text-primary);">Arq Vagas Brasil</h3>
+                    <h4 style="font-size: 1.1rem; color: var(--accent); font-weight: 500;">Desenvolvedor Full Stack Freelance</h4>
+                </div>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 24px;">
+                    Portal de vagas e estágios para o setor de arquitetura e urbanismo no Brasil. Mais de 150 mil seguidores no LinkedIn, 12 mil em grupos e mais de 300 alunos em mentoria. Responsável pelo desenvolvimento de ponta a ponta da plataforma.
+                </p>
+                <div class="skill-category">
+                    <div class="skill-tags" style="margin-bottom: 24px;">
+                        <span class="tag">React Native (Expo)</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">NestJS</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Prisma ORM</span>
+                    </div>
+                </div>
+                <div class="project-links" style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="https://www.arqvagasbrasil.com" target="_blank" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="ph ph-link"></i> Website
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.arqvagas.mobile&hl=pt_BR" target="_blank" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="ph ph-google-play-logo"></i> Google Play
+                    </a>
+                    <a href="https://apps.apple.com/br/app/arqvagasbrasil/id6748178561" target="_blank" class="btn btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="ph ph-app-store-logo"></i> App Store
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section class="docs-section">
+            <div class="split-layout">
+                <div class="layout-col">
+                    <section id="education" class="education section reveal">
+                        <div class="section-header">
+                            <h2>Formação Acadêmica</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="glass-card education-card">
+                            <h3>Bacharelado em Sistemas de Informação</h3>
+                            <h4>Faculdade Porto/FGV</h4>
+                            <span class="date">2014 - 2018</span>
+                        </div>
+                        <div class="glass-card education-card" style="margin-top: 1rem;">
+                            <h3>Node.js, ReactJS e React Native (Bootcamp)</h3>
+                            <h4>Rocketseat</h4>
+                            <span class="date">2019 - 2020</span>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="layout-col">
+                    <section id="certifications" class="certifications section reveal">
+                        <div class="section-header">
+                            <h2>Certificações</h2>
+                            <div class="line"></div>
+                        </div>
+                        <div class="glass-card cert-card">
+                            <ul class="cert-list">
+                                <li><i class="ph-fill ph-check-circle"></i> TypeScript Parte 2: Avançando na Linguagem
+                                </li>
+                                <li><i class="ph-fill ph-check-circle"></i> Django Intermediário</li>
+                                <li><i class="ph-fill ph-check-circle"></i> PHP - Iniciando com OO</li>
+                                <li><i class="ph-fill ph-check-circle"></i> Iniciando com CodeIgniter</li>
+                                <li><i class="ph-fill ph-check-circle"></i> Firewall com PFSense</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section reveal">
+            <div class="section-header">
+                <h2>Principais Competências</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3>Mobile</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">Expo</span>
+                        <span class="tag">Detox</span>
+                        <span class="tag">OTA Updates</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Redux Toolkit</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">NestJS</span>
+                        <span class="tag">Laravel</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3>DevOps & DB</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Jest</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer glass-card">
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Vinícius Fernandes. Construído com <i class="ph-fill ph-heart"
+                    style="color: var(--accent);"></i>.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
