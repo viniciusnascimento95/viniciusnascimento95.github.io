@@ -104,7 +104,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-- **Email**: [EMAIL_ADDRESS]
+- **Email**: [nascimento.vinicius32@gmail.com](mailto:[EMAIL_ADDRESS])
 - **LinkedIn**: https://www.linkedin.com/in/vinícius-fernandes-027507159/
 
 ## Acknowledgments
